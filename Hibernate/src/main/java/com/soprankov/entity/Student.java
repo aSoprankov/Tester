@@ -4,20 +4,20 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table( name = "STUDENT" )
+@Table(name = "STUDENT")
 public class Student {
     @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY )
-    @Column( name = "STUDENT_ID" )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "STUDENT_ID")
     private int id;
 
-    @Column( name = "STUDENT_NAME" )
+    @Column(name = "STUDENT_NAME")
     private String name;
 
-    @Column( name = "GROUP_ID" )
+    @Column(name = "GROUP_ID")
     private int groupId;
 
-    @Column( name = "JOINED_DATE" )
+    @Column(name = "JOINED_DATE")
     @Temporal(TemporalType.DATE)
     private Date joionedDate;
 
@@ -25,12 +25,16 @@ public class Student {
 
     }
 
-    public Student(int id, String name, int groupId) {
+    public Student(int id) {
         this.id = id;
-        this.name = name;
-        this.groupId = groupId;
-        this.joionedDate = new Date();
     }
+
+//    public Student(int id, String name, int groupId) {
+//        this.id = id;
+//        this.name = name;
+//        this.groupId = groupId;
+//        this.joionedDate = new Date();
+//    }
 
     public int getId() {
         return id;

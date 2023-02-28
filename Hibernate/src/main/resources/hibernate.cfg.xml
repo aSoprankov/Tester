@@ -9,7 +9,7 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- Assume hibernate is the database name -->
-        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate?serverTimezone=UTC</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/homework19?serverTimezone=UTC</property>
         <property name="connection.username">aSoprankov</property>
         <property name="connection.password">075304Soprankov</property>
 
@@ -28,15 +28,16 @@
         It also drops the database schema when the SessionFactory is closed.-->
 
         <!-- JDBC connection pool (use the built-in) -->
-        <property name="connection.pool_size">1</property>
+        <property name="connection.pool_size">10</property>
         <property name="current_session_context_class">thread</property>
 
-<!--        <mapping class="com.soprankov.hibernate.entity.Departments" />-->
+<!--        <mapping class="com.soprankov.hibernate.entity.Department" />-->
 <!--        <mapping class="com.soprankov.hibernate.entity.Group" />-->
 <!--        <mapping class="com.soprankov.hibernate.entity.Point" />-->
         <mapping class="com.soprankov.hibernate.entity.Student" />
 <!--        <mapping class="com.soprankov.hibernate.entity.Subject" />-->
 <!--        <mapping class="com.soprankov.hibernate.entity.Teacher" />-->
+
 <!--        <mapping class="com.soprankov.hibernate.entity.StudentPoint" />-->
 <!--        <mapping class="com.soprankov.hibernate.entity.StudentGroup" />-->
 <!--        <mapping class="com.soprankov.hibernate.entity.PointSubject" />-->

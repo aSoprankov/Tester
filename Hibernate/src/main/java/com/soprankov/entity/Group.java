@@ -3,7 +3,6 @@ package com.soprankov.entity;
 import javax.persistence.*;
 
 @Entity
-
 public class Group {
     @Id
     @Column( name = "GROUP_ID" )
